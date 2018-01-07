@@ -23,7 +23,7 @@ function sign(roomId, time, did) {
             return fetch(filename)
                 .then(res => res.arrayBuffer())
                 .then(buf => new Uint8Array(buf).buffer);
-        };
+        }
     });
     emu.runSWF('douyu.swf', false).then(() => {
         const CModule = emu.getProperty('sample.mp', 'CModule');
