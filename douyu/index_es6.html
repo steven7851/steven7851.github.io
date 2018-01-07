@@ -27,7 +27,7 @@ function sign(roomId, time, did) {
         var CModule = emu.getProperty('sample.mp', 'CModule');
         var xx = emu.getPublicClass('mp');
         CModule.callProperty('startAsync');
-        console.log('sign', roomId, time, did);
+        //console.log('sign', roomId, time, did);
         var StreamSignDataPtr = CModule.callProperty('malloc', 4);
         var outptr1 = CModule.callProperty('malloc', 4);
         var datalen = xx.callProperty('sub_2', parseInt(roomId), parseInt(time), did.toString(), outptr1, StreamSignDataPtr);
@@ -37,7 +37,7 @@ function sign(roomId, time, did) {
         var out = CModule.callProperty('readString', pOut, 4);
         CModule.callProperty('free', StreamSignDataPtr);
         CModule.callProperty('free', outptr1);
-        console.log('sign result', sign, out);
+        //console.log('sign result', sign, out);
         var obj = new Object();
         obj.sign = sign;
         obj.cptl = out;
