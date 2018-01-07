@@ -3,6 +3,7 @@
 <title>douyu</title>
 <head>
 <script>
+'use strict';
 /*!
  * FlashEmu v1.0.1 (2017-9-5)
  * (c) 2017-2017 spacemeowx2
@@ -20,9 +21,7 @@ function sign(roomId, time, did) {
     });
     const emu = new FlashEmu({
         readFile(filename) {
-            return fetch(filename)
-                .then(res => res.arrayBuffer())
-                .then(buf => new Uint8Array(buf).buffer);
+            return fetch(filename).then(res => res.arrayBuffer()).then(buf => new Uint8Array(buf).buffer);
         }
     });
     emu.runSWF('douyu.swf', false).then(() => {
@@ -48,17 +47,16 @@ function sign(roomId, time, did) {
     }).catch(e => console.error(e));
 };
 function getUrlVars() {
-    var vars = {}
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
-        function(m, key, value) {
-            vars[key] = value
-        })
-    return vars
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+        vars[key] = value;
+    });
+    return vars;
 }
-const rid = getUrlVars()["rid"]
-const tt = getUrlVars()["tt"]
-const did = getUrlVars()["did"]
-sign(rid, tt, did)
+const rid = getUrlVars()["rid"];
+const tt = getUrlVars()["tt"];
+const did = getUrlVars()["did"];
+sign(rid, tt, did);
 </script>
 </head>
 <body>
