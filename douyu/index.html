@@ -43,11 +43,10 @@ function sign(roomId, time, did) {
         obj.sign = sign;
         obj.cptl = out;
         let string = JSON.stringify(obj);
-        var newDiv = document.createElement("div");
-        var newContent = document.createTextNode(string);
-        newDiv.appendChild(newContent);
-        var currentDiv = document.getElementById("sign");
-        document.body.insertBefore(newDiv, currentDiv);
+        var t = document.createElement("div");
+        t.innerHTML = string;
+        var s = document.getElementById("sign");
+        s.appendChild(t);
     }).catch(e => console.error(e));
 };
 function getUrlVars() {
