@@ -31,7 +31,7 @@ function sign(roomId, time, did) {
         CModule.callProperty('startAsync');
         console.log('sign', roomId, time, did);
         let StreamSignDataPtr = CModule.callProperty('malloc', 4);
-        let datalen = xx.callProperty('sub_1', parseInt('1'), parseInt(roomId), did.toString(), parseInt(time), StreamSignDataPtr);
+        let datalen = xx.callProperty('sub_1', parseInt('1'), roomId.toString(), did.toString(), parseInt(time), StreamSignDataPtr);
         let pSign = CModule.callProperty('read32', StreamSignDataPtr);
         let sign = CModule.callProperty('readString', pSign, datalen);
         xx.callProperty('sub_2', StreamSignDataPtr)
