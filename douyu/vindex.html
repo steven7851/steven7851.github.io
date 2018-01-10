@@ -29,14 +29,14 @@ function sign(roomId, time, did) {
         const CModule = emu.getProperty('sample.zz', 'CModule');
         const xx = emu.getPublicClass('zz');
         CModule.callProperty('startAsync');
-        //console.log('sign', roomId, time, did);
+        console.log('sign', roomId, time, did);
         let StreamSignDataPtr = CModule.callProperty('malloc', 4);
         let datalen = xx.callProperty('sub_1', parseInt('1'), parseInt(roomId), did.toString(), parseInt(time), StreamSignDataPtr);
         let pSign = CModule.callProperty('read32', StreamSignDataPtr);
         let sign = CModule.callProperty('readString', pSign, datalen);
         xx.callProperty('sub_2', StreamSignDataPtr)
         CModule.callProperty('free', StreamSignDataPtr);
-        //console.log('sign result', sign);
+        console.log('sign result', sign);
         const obj = new Object();
         obj.sign = sign;
         const string = JSON.stringify(obj);
