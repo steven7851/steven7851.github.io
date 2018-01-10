@@ -15,10 +15,10 @@ function sign(roomId, time, did) {
     FlashEmu.BUILTIN = 'builtin.abc';
     FlashEmu.PLAYERGLOBAL = 'playerglobal.abc';
     FlashEmu.setGlobalFlags({
-        enableDebug: false,
-        enableLog: false,
-        enableWarn: false,
-        enableError: false
+        enableDebug: true,
+        enableLog: true,
+        enableWarn: true,
+        enableError: true
     });
     const emu = new FlashEmu({
         readFile(filename) {
