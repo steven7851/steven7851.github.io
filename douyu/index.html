@@ -44,7 +44,7 @@ function sign(roomId, time, did) {
         obj.sign = sign;
         obj.cptl = out;
         const string = JSON.stringify(obj);
-        const newDiv = document.createElement("div");
+        const newDiv = document.createElement('div');
         const newContent = document.createTextNode(string);
         newDiv.id = 'sign';
         newDiv.appendChild(newContent);
@@ -58,9 +58,9 @@ function getUrlVars() {
     });
     return vars;
 }
-const rid = getUrlVars()["rid"];
-const tt = getUrlVars()["tt"];
-const did = getUrlVars()["did"];
+const rid = getUrlVars()['rid'];
+const tt = getUrlVars()['tt'];
+const did = getUrlVars()['did'];
 sign(rid, tt, did);
 </script>
 </head>
