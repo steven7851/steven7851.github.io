@@ -30,7 +30,7 @@ function sign(roomId, time, did) {
         let datalen = xx.callProperty('sub_1', parseInt('1'), roomId.toString(), did.toString(), parseInt(time), StreamSignDataPtr);
         let pSign = CModule.callProperty('read32', StreamSignDataPtr);
         let sign = CModule.callProperty('readString', pSign, datalen);
-        xx.callProperty('sub_2', StreamSignDataPtr)
+        xx.callProperty('sub_2', StreamSignDataPtr);
         CModule.callProperty('free', StreamSignDataPtr);
         console.log('sign result', sign);
         const obj = new Object();
@@ -42,7 +42,7 @@ function sign(roomId, time, did) {
         newDiv.appendChild(newContent);
         document.body.appendChild(newDiv);
     }).catch(e => console.error(e));
-};
+}
 function getUrlVars() {
     const vars = {};
     const parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
