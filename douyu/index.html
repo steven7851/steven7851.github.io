@@ -25,7 +25,7 @@ function sign(roomId, time, did) {
         const CModule = vm.getProxy(emu.getProperty('sample.mp', 'CModule'));
         const xx = vm.getProxy(emu.getPublicClass('mp'));
         CModule.callProperty('startAsync');
-        //console.log('sign', roomId, time, did);
+        console.log('sign', roomId, time, did);
         let StreamSignDataPtr = CModule.callProperty('malloc', 4);
         let outptr1 = CModule.callProperty('malloc', 4);
         let datalen = xx.callProperty('sub_2', parseInt(roomId), parseInt(time), did.toString(), outptr1, StreamSignDataPtr);
@@ -35,7 +35,7 @@ function sign(roomId, time, did) {
         let out = CModule.callProperty('readString', pOut, 4);
         CModule.callProperty('free', StreamSignDataPtr);
         CModule.callProperty('free', outptr1);
-        //console.log('sign result', sign, out);
+        console.log('sign result', sign, out);
         const obj = new Object();
         obj.sign = sign;
         obj.cptl = out;

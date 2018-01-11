@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<title>douyu</title>
+<head>
+<script type="text/javascript" src="flashemu.js"></script>
+<script>
+'use strict';function sign(roomId,time,did){FlashEmu.BUILTIN='builtin.abc';FlashEmu.PLAYERGLOBAL='playerglobal.abc';FlashEmu.setGlobalFlags({enableDebug:!1,enableLog:!1,enableWarn:!1,enableError:!1});const emu=new FlashEmu({readFile(filename){return fetch(filename).then(res=>res.arrayBuffer()).then(buf=>new Uint8Array(buf).buffer)}});emu.runSWF('vdouyu.swf',!1).then(()=>{const vm=emu.getVM();const CModule=vm.getProxy(emu.getProperty('sample.zz','CModule'));const xx=vm.getProxy(emu.getPublicClass('zz'));CModule.callProperty('startAsync');let StreamSignDataPtr=CModule.callProperty('malloc',4);let datalen=xx.callProperty('sub_1',parseInt('1'),roomId.toString(),did.toString(),parseInt(time),StreamSignDataPtr);let pSign=CModule.callProperty('read32',StreamSignDataPtr);let sign=CModule.callProperty('readString',pSign,datalen);xx.callProperty('sub_2',StreamSignDataPtr)
+CModule.callProperty('free',StreamSignDataPtr);const obj=new Object();obj.sign=sign;const string=JSON.stringify(obj);const newDiv=document.createElement('div');const newContent=document.createTextNode(string);newDiv.id='sign';newDiv.appendChild(newContent);document.body.appendChild(newDiv)}).catch(e=>console.error(e))};function getUrlVars(){const vars={};const parts=window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(m,key,value){vars[key]=value});return vars}
+const vid=getUrlVars()['vid'];const tt=getUrlVars()['tt'];const did=getUrlVars()['did'];sign(vid,tt,did)
+</script>
+</head>
+<body>
+</body>
+</html>
