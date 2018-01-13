@@ -3,4 +3,3 @@ https://steven7851.github.io/douyu/signer.html?rid=67373&tt=25254787&did=C509BCD
 
 https://steven7851.github.io/douyu/vindex.html?vid=5n8GzMXZxlDv6qyP&tt=1515881179&did=BB61F4E324658AD126EF2AC064B23C11
 https://steven7851.github.io/douyu/vsigner.html?vid=5n8GzMXZxlDv6qyP&tt=1515881179&did=BB61F4E324658AD126EF2AC064B23C11
-sign:db5afc4377bb43491820407d4b8d6944
