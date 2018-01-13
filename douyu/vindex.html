@@ -43,16 +43,17 @@ function sign(roomId, time, did) {
         document.body.appendChild(newDiv);
     }).catch(e => console.error(e));
 }
+
 function getUrlVars() {
     const vars = {};
-    const parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+    const parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
         vars[key] = value;
     });
     return vars;
 }
-const vid = getUrlVars()['vid'];
-const tt = getUrlVars()['tt'];
-const did = getUrlVars()['did'];
+const vid = getUrlVars().vid;
+const tt = getUrlVars().tt;
+const did = getUrlVars().did;
 sign(vid, tt, did);
 </script>
 </head>
