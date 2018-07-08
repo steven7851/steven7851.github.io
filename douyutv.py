@@ -162,7 +162,8 @@ class Douyutv(Plugin):
         env = os.environ.copy()
         self.logger.debug(env['PATH'])
         try:
-            Popen(['node', '-v'], stdout=PIPE, stderr=PIPE, env=env).communicate()
+            test = "pass"
+            #Popen(['node', '-v'], stdout=PIPE, stderr=PIPE, env=env).communicate()
         except (OSError, IOError) as err:
             self.logger.info(str(err) + "\n"
                 "Please install Node.js first.\n"
@@ -278,8 +279,9 @@ class Douyutv(Plugin):
             else:
                 yield quality[i], HTTPStream(self.session, url)
 
-        url = "{room[mixed_url]}/{room[mixed_live]}".format(room=room)
-        yield "mix", HTTPStream(self.session, url)
+        if room["is_mixed"]:
+            url = "{room[mixed_url]}/{room[mixed_live]}".format(room=room)
+            yield "mix", HTTPStream(self.session, url)
 
 
 __plugin__ = Douyutv
