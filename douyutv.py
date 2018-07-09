@@ -226,11 +226,11 @@ class Douyutv(Plugin):
                     channel = room_list[int(ops)]
                 except AttributeError:
                     try:
-                        self.logger.info("Available sub-channels:\n{0}".format(room_list))
+                        self.logger.info("Available sub-channels: {0}".format(room_list))
                         ops = _channel_re.search(self.url).group(1)
                         channel = room_list[int(ops) - 1]
                     except AttributeError:
-                        self.logger.info("You can add '?ch=[number]' after url to choose channel,\n"
+                        self.logger.info("You can add '?ch=number' after url to choose channel,\n"
                             "if no query string, default use '?ch=1' for first channel in list.")
                         channel = room_list[0]
 
@@ -251,7 +251,7 @@ class Douyutv(Plugin):
             self.logger.info("Available cdns: {0}".format(cdns))
             cdn = _cdn_re.search(self.url).group(1)
         except AttributeError:
-            self.logger.info("You can add '?cdn=[CDN_name]' after url to choose CDN,\n"
+            self.logger.info("You can add '?cdn=CDN_name' after url to choose CDN,\n"
                 "if no query string, default use '?cdn=ws' for ws CDN.")
             cdn = "ws"
 
