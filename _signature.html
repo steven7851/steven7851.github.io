@@ -131,8 +131,8 @@ function getUrlVars() {
     });
     return vars;
 }
-const userId = getUrlVars().userId;
-const _signature = generateSignature(userId);
+const uid = getUrlVars().uid;
+const _signature = generateSignature(uid);
 console.log(_signature);
 document.write(_signature);
 </script>
