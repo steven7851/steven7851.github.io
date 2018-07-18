@@ -1,17 +1,1 @@
 https://steven7851.github.io/signature.html?uid=63628384192
-
-
-```node.js
-// node signature.js 63628384192
-
-var request = require('request');
-var uid = process.argv.splice(2);
-var data = { uid: uid };
-
-request({ url: 'https://steven7851.github.io/signature.html', qs: data }, function (err, response, body) {
-    if (err) {
-        console.log(err);return;
-    }
-    console.log(body);
-});
-```
