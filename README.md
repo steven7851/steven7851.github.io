@@ -3,6 +3,7 @@ https://steven7851.github.io/signature.html?uid=63628384192
 ```console
 > e = __M.require("douyin_falcon:node_modules/byted-acrawler/dist/runtime")
 {sign: ƒ, __esModule: true, default: {…}}
+
 > eval(e.sign)
 (function anonymous(
 ) {
