@@ -1,6 +1,10 @@
 https://steven7851.github.io/signature.html?uid=63628384192
 
 ```console
+open any user page, go to console, enter following command
+
+https://www.amemv.com/share/user/69478693029
+
 > e = __M.require("douyin_falcon:node_modules/byted-acrawler/dist/runtime")
 {sign: ƒ, __esModule: true, default: {…}}
 
