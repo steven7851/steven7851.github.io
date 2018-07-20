@@ -4,9 +4,11 @@ https://steven7851.github.io/signature.html?uid=63628384192
 // open any user page, go to console, enter following command
 // https://www.amemv.com/share/user/69478693029
 > e = __M.require("douyin_falcon:node_modules/byted-acrawler/dist/runtime")
+{sign: ƒ, __esModule: true, default: {…}}
 > eval(e.sign)
+ƒ e(){return r(e.y,arguments,k)}
 
-// you will get the result which algorithm is decrypted
+// click output above, you will get the result which algorithm is decrypted
 // refer from https://github.com/loadchange/amemv-crawler/blob/master/fuck-byted-acrawler.js
 (function anonymous(
 ) {
