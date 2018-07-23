@@ -162,7 +162,8 @@ class Douyutv(Plugin):
         env = os.environ.copy()
         self.logger.debug(env['PATH'])
         try:
-            Popen(['node', '-v'], stdout=PIPE, stderr=PIPE, env=env).communicate()
+            test = "pass"
+            #Popen(['node', '-v'], stdout=PIPE, stderr=PIPE, env=env).communicate()
         except (OSError, IOError) as err:
             self.logger.info(str(err) + "\n"
                 "Please install Node.js first.\n"
@@ -188,7 +189,7 @@ class Douyutv(Plugin):
             if args.http_cookie:
                 res = http.post(VAPI_URL, data=data)
             else:
-                cookie = dict(acf_auth='')
+                cookie = dict(acf_auth='cbddr%2FW1Q5dQD9kYU8MuOkzAUAPEk2o5jv6mdPGGsT3L7rE4zL5j%2F56SQZekmTFRdDcKBTLnrq3y8aVo%2FTFxuv48w8BBvlCBtNNdK9zWPiwrATGRmnKE%2B6ra8Z7%2B;')
                 res = http.post(VAPI_URL, data=data, cookies=cookie)
             if _supern_re.search(res.text):
                 self.logger.info("This video has source quality, but need logged-in cookie.\n"
@@ -256,8 +257,7 @@ class Douyutv(Plugin):
             cdn = "ws"
 
         h5js = http.get(H5JS_URL)
-        h5ver = _h5ver_re.search(h5js.text).group(1)
-        ver = "Douyu_" + h5ver
+        ver = _h5ver_re.search(h5js.text).group(1)
         tt = int(time.time() / 60)
         process = Popen(['node', node_modules + '/douyutv1_signer.js', str(channel), str(tt), did], stdout=PIPE, stderr=PIPE, env=env)
         res = process.communicate()[0].decode()
