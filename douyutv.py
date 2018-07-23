@@ -162,8 +162,7 @@ class Douyutv(Plugin):
         env = os.environ.copy()
         self.logger.debug(env['PATH'])
         try:
-            test = "pass"
-            #Popen(['node', '-v'], stdout=PIPE, stderr=PIPE, env=env).communicate()
+            Popen(['node', '-v'], stdout=PIPE, stderr=PIPE, env=env).communicate()
         except (OSError, IOError) as err:
             self.logger.info(str(err) + "\n"
                 "Please install Node.js first.\n"
