@@ -23,6 +23,7 @@ SHOW_STATUS_OFFLINE = 2
 STREAM_WEIGHTS = {
     "low": 540,
     "medium": 720,
+    "high": 900,
     "source": 1080
 }
 
@@ -162,7 +163,8 @@ class Douyutv(Plugin):
         env = os.environ.copy()
         self.logger.debug(env['PATH'])
         try:
-            Popen(['node', '-v'], stdout=PIPE, stderr=PIPE, env=env).communicate()
+            test = "pass"
+            #Popen(['node', '-v'], stdout=PIPE, stderr=PIPE, env=env).communicate()
         except (OSError, IOError) as err:
             self.logger.info(str(err) + "\n"
                 "Please install Node.js first.\n"
@@ -188,7 +190,7 @@ class Douyutv(Plugin):
             if args.http_cookie:
                 res = http.post(VAPI_URL, data=data)
             else:
-                cookie = dict(acf_auth='')
+                cookie = dict(acf_auth='cbddr%2FW1Q5dQD9kYU8MuOkzAUAPEk2o5jv6mdPGGsT3L7rE4zL5j%2F56SQZekmTFRdDcKBTLnrq3y8aVo%2FTFxuv48w8BBvlCBtNNdK9zWPiwrATGRmnKE%2B6ra8Z7%2B;')
                 res = http.post(VAPI_URL, data=data, cookies=cookie)
             if _supern_re.search(res.text):
                 self.logger.info("This video has source quality, but need logged-in cookie.\n"
@@ -263,9 +265,9 @@ class Douyutv(Plugin):
         sign = _sign_re.search(res).group(1)
         cptl = _sign_re.search(res).group(2)
         self.logger.info("Now channel: {0}, CDN: {1}".format(channel, cdn))
-        rate = [0, 2, 1]
-        quality = ["source", "medium", "low"]
-        for i in range(0, 3, 1):
+        rate = [0, 4, 2, 1]
+        quality = ["source", "high", "medium", "low"]
+        for i in range(0, 4, 1):
             room = self._get_room_json(channel, cdn, rate[i], ver, tt, did ,sign, cptl)
             url = "{room[rtmp_url]}/{room[rtmp_live]}".format(room=room)
             if 'rtmp:' in url:
