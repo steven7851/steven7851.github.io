@@ -163,7 +163,8 @@ class Douyutv(Plugin):
         env = os.environ.copy()
         self.logger.debug(env['PATH'])
         try:
-            Popen(['node', '-v'], stdout=PIPE, stderr=PIPE, env=env).communicate()
+            test = "pass"
+            #Popen(['node', '-v'], stdout=PIPE, stderr=PIPE, env=env).communicate()
         except (OSError, IOError) as err:
             self.logger.info(str(err) + "\n"
                 "Please install Node.js first.\n"
@@ -189,7 +190,7 @@ class Douyutv(Plugin):
             if args.http_cookie:
                 res = http.post(VAPI_URL, data=data)
             else:
-                cookie = dict(acf_auth='')
+                cookie = dict(acf_auth='cbddr%2FW1Q5dQD9kYU8MuOkzAUAPEk2o5jv6mdPGGsT3L7rE4zL5j%2F56SQZekmTFRdDcKBTLnrq3y8aVo%2FTFxuv48w8BBvlCBtNNdK9zWPiwrATGRmnKE%2B6ra8Z7%2B;')
                 res = http.post(VAPI_URL, data=data, cookies=cookie)
             if _supern_re.search(res.text):
                 self.logger.info("This video has source quality, but need logged-in cookie.\n"
@@ -199,18 +200,16 @@ class Douyutv(Plugin):
                         "The percent symbol '%' in cookie must be modified to '%%' in command-line and batch file.")
             if _super_re.search(res.text):
                 room = http.json(res, schema=_vapi_schema)
-                if room["thumb_video"]["super"]["url"]:
-                    yield "source", HLSStream(self.session, room["thumb_video"]["super"]["url"])
-                if room["thumb_video"]["high"]["url"]:
-                    yield "medium", HLSStream(self.session, room["thumb_video"]["high"]["url"])
-                if room["thumb_video"]["normal"]["url"]:
-                    yield "low", HLSStream(self.session, room["thumb_video"]["normal"]["url"])
+                yield "source", HLSStream(self.session, room["thumb_video"]["super"]["url"])
+                yield "medium", HLSStream(self.session, room["thumb_video"]["high"]["url"])
+                yield "low", HLSStream(self.session, room["thumb_video"]["normal"]["url"])
             else:
                 room = http.json(res, schema=_vapin_schema)
-                if room["thumb_video"]["high"]["url"]:
+                try:
                     yield "medium", HLSStream(self.session, room["thumb_video"]["high"]["url"])
-                if room["thumb_video"]["normal"]["url"]:
-                    yield "low", HLSStream(self.session, room["thumb_video"]["normal"]["url"])
+                except:
+                    pass
+                yield "low", HLSStream(self.session, room["thumb_video"]["normal"]["url"])
             return
 
         channel = match.group("channel")
