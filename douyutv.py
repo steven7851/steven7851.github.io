@@ -45,7 +45,7 @@ _index_re = re.compile(r'\?roomIndex=(\d+)')
 _channel_re = re.compile(r'ch=([^/&?]+)')
 _cdn_re = re.compile(r'cdn=([^/&?]+)')
 _sign_re = re.compile(r'sign:\s(.+)\scptl:\s(.+)')
-_h5ver_re = re.compile(r'"(H5_.+?)"')
+_h5ver_re = re.compile(r't\.VERSION="(.+?)"')
 _supern_re = re.compile(r'"super"\s*:\s*""')
 _super_re = re.compile(r'"super"\s*:\s*{.+?}')
 
@@ -162,7 +162,8 @@ class Douyutv(Plugin):
         env = os.environ.copy()
         self.logger.debug(env['PATH'])
         try:
-            Popen(['node', '-v'], stdout=PIPE, stderr=PIPE, env=env).communicate()
+            test = "pass"
+            #Popen(['node', '-v'], stdout=PIPE, stderr=PIPE, env=env).communicate()
         except (OSError, IOError) as err:
             self.logger.info(str(err) + "\n"
                 "Please install Node.js first.\n"
@@ -257,7 +258,7 @@ class Douyutv(Plugin):
 
         h5js = http.get(H5JS_URL)
         h5ver = _h5ver_re.search(h5js.text).group(1)
-        ver = h5ver.replace("H5_", "").replace("beta", "")
+        ver = "Douyu_" + h5ver
         tt = int(time.time() / 60)
         process = Popen(['node', node_modules + '/douyutv1_signer.js', str(channel), str(tt), did], stdout=PIPE, stderr=PIPE, env=env)
         res = process.communicate()[0].decode()
