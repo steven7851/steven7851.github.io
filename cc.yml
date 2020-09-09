@@ -464,11 +464,11 @@ rule-providers:
     url: 'https://git.dler.io/lhie1/Rules/master/Clash/Provider/Apple.yaml'
     path: ./Rules/Apple
     interval: 86400
-  ChinaIP:
+  Domestic IPs:
     type: http
     behavior: ipcidr
-    url: 'https://git.dler.io/DivineEngine/Profiles/master/Clash/RuleSet/Extra/ChinaIP.yaml'
-    path: ./RuleSet/Extra/ChinaIP.yaml
+    url: 'https://git.dler.io/lhie1/Rules/master/Clash/Provider/Domestic%20IPs.yaml'
+    path: ./Rules/Domestic_IPs
     interval: 86400
 rules:
   - RULE-SET,Reject,AdBlock
@@ -523,6 +523,7 @@ rules:
 
   - RULE-SET,PROXY,Proxy
   - RULE-SET,Domestic,Domestic
+  - RULE-SET,Domestic IPs,Domestic
   - RULE-SET,Apple,Apple
 
   - IP-CIDR,192.168.0.0/16,DIRECT
@@ -531,8 +532,6 @@ rules:
   - IP-CIDR,127.0.0.0/8,DIRECT
   - IP-CIDR,100.64.0.0/10,DIRECT
   - IP-CIDR,224.0.0.0/4,DIRECT
-
-  - RULE-SET,ChinaIP,Domestic
 
   - GEOIP,CN,Domestic
   - MATCH,Others
@@ -585,6 +584,7 @@ script:
             "Microsoft": "Microsoft",
             "PROXY": "Proxy",
             "Domestic": "Domestic",
+            "Domestic IPs": "Domestic",
             "Apple": "Apple"
             }
         port = int(metadata["dst_port"])
