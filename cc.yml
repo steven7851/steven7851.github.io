@@ -596,12 +596,16 @@ script:
             if ctx.rule_providers[rule_name].match(metadata):
                 return ruleset_action[rule_name]
 
-        ip = ctx.resolve_ip(metadata["host"])
+        ip = metadata["dst_ip"] or ctx.resolve_ip(metadata["host"])
+
         if ip == "":
           return "DIRECT"
 
         code = ctx.geoip(ip)
-        if code == "LAN" or code == "CN":
+        if code == "CN":
           return "Domestic"
+
+        if code == "LAN":
+          return "DIRECT"
 
         return "Others"
