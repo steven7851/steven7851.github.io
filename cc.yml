@@ -596,7 +596,7 @@ script:
             if ctx.rule_providers[rule_name].match(metadata):
                 return ruleset_action[rule_name]
 
-        ip = metadata["dst_ip"] = ctx.resolve_ip(metadata["host"])
+        ip = ctx.resolve_ip(metadata["host"])
         if ip == "":
           return "DIRECT"
 
