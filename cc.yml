@@ -32,12 +32,12 @@ dns:
     - 'https://139.224.112.177/dns-query'
     - 'https://59.110.53.209/dns-query'
   fallback:
-    - 'tls://1.1.1.1:853'
-    - 'tls://1.0.0.1:853'
+    # - 'tls://1.1.1.1:853'
+    # - 'tls://1.0.0.1:853'
+    - 'https://cloudflare-dns.com/dns-query'
     - 'tls://8.8.8.8:853'
     - 'tls://8.8.4.4:853'
-    - 'https://cloudflare-dns.com/dns-query'
-    - 'https://dns.google/dns-query'
+    # - 'https://dns.google/dns-query'
   fallback-filter:
     geoip: true
 proxies: null
