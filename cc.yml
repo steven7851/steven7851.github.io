@@ -20,10 +20,10 @@ dns:
     - '*.lan'
     - '*.edu.cn'
     - localhost.ptlogin2.qq.com
-    - '*.*.*.*.srv.nintendo.net'
-    - '*.*.*.stun.playstation.net'
-    - 'xbox.*.microsoft.com'
-    - '*.*.*.xboxlive.com'
+    - '*.*.*.srv.nintendo.net'
+    - '*.*.stun.playstation.net'
+    - 'xbox.*.*.microsoft.com'
+    - '*.*.xboxlive.com'
   fake-ip-range: 198.18.0.1/16
   nameserver:
     - 'https://47.108.56.233/dns-query'
@@ -522,9 +522,11 @@ rules:
   - RULE-SET,Microsoft,Microsoft
 
   - RULE-SET,PROXY,Proxy
+
+  - RULE-SET,Apple,Apple
+
   - RULE-SET,Domestic,Domestic
   - RULE-SET,Domestic IPs,Domestic
-  - RULE-SET,Apple,Apple
 
   - IP-CIDR,192.168.0.0/16,DIRECT
   - IP-CIDR,10.0.0.0/8,DIRECT
@@ -583,9 +585,9 @@ script:
             "PayPal": "PayPal",
             "Microsoft": "Microsoft",
             "PROXY": "Proxy",
+            "Apple": "Apple",
             "Domestic": "Domestic",
-            "Domestic IPs": "Domestic",
-            "Apple": "Apple"
+            "Domestic IPs": "Domestic"
             }
         port = int(metadata["dst_port"])
 
