@@ -24,6 +24,8 @@ dns:
     - '*.*.stun.playstation.net'
     - 'xbox.*.*.microsoft.com'
     - '*.*.xboxlive.com'
+    - '*.msftncsi.com'
+    - www.msftconnecttest.com
   fake-ip-range: 198.18.0.1/16
   nameserver:
     - 'https://47.108.56.233/dns-query'
