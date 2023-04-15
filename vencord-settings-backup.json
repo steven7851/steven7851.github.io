@@ -415,6 +415,9 @@
                 "enabled": true,
                 "mode": "user-nick",
                 "inReplies": true
+            },
+            "AlwaysAnimate": {
+                "enabled": true
             }
         },
         "notifications": {
@@ -429,7 +432,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1681531417680
+            "settingsSyncVersion": 1681535731102
         }
     },
     "quickCss": ""
