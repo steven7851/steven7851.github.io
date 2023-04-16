@@ -413,7 +413,7 @@
             },
             "ShowMeYourName": {
                 "enabled": true,
-                "mode": "user-nick",
+                "mode": "nick-user",
                 "inReplies": true
             },
             "AlwaysAnimate": {
@@ -432,7 +432,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1681535731102
+            "settingsSyncVersion": 1681608600566
         }
     },
     "quickCss": ""
