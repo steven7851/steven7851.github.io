@@ -294,7 +294,8 @@
                 "hideUnreads": true
             },
             "SilentMessageToggle": {
-                "enabled": true
+                "enabled": true,
+                "persistState": true
             },
             "SilentTyping": {
                 "enabled": true,
@@ -403,7 +404,8 @@
             },
             "PinDMs": {
                 "enabled": true,
-                "pinnedDMs": "1079857455577714809,1012429412446257274"
+                "pinnedDMs": "1079857455577714809,1012429412446257274",
+                "pinOrder": 0
             },
             "ReviewDB": {
                 "enabled": false
@@ -418,6 +420,9 @@
             },
             "AlwaysAnimate": {
                 "enabled": true
+            },
+            "USRBG": {
+                "enabled": false
             }
         },
         "notifications": {
@@ -432,7 +437,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1681608600566
+            "settingsSyncVersion": 1681796030347
         }
     },
     "quickCss": ""
