@@ -254,13 +254,13 @@
                 "enabled": false
             },
             "RelationshipNotifier": {
-                "enabled": false,
+                "enabled": true,
                 "offlineRemovals": true,
                 "groups": true,
                 "servers": true,
                 "friends": true,
                 "friendRequestCancels": true,
-                "notices": false
+                "notices": true
             },
             "RevealAllSpoilers": {
                 "enabled": false
@@ -437,7 +437,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1681796030347
+            "settingsSyncVersion": 1682127878788
         }
     },
     "quickCss": ""
