@@ -12,10 +12,13 @@
         "winNativeTitleBar": false,
         "plugins": {
             "AlwaysTrust": {
-                "enabled": false
+                "enabled": true
             },
             "AnonymiseFileNames": {
-                "enabled": false
+                "enabled": false,
+                "method": 0,
+                "randomisedLength": 7,
+                "consistent": "image"
             },
             "BadgeAPI": {
                 "enabled": true
@@ -70,7 +73,7 @@
                 "bothStyles": false
             },
             "BetterUploadButton": {
-                "enabled": false
+                "enabled": true
             },
             "BlurNSFW": {
                 "enabled": false
@@ -118,7 +121,8 @@
                 "enableStickerBypass": true,
                 "stickerSize": 160,
                 "enableStreamQualityBypass": true,
-                "transformStickers": true
+                "transformStickers": true,
+                "transformCompoundSentence": false
             },
             "FakeProfileThemes": {
                 "enabled": false,
@@ -223,7 +227,7 @@
                 "enabled": false
             },
             "NSFWGateBypass": {
-                "enabled": false
+                "enabled": true
             },
             "oneko": {
                 "enabled": false
@@ -437,7 +441,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1682127878788
+            "settingsSyncVersion": 1682302941017
         }
     },
     "quickCss": ""
