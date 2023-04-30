@@ -39,7 +39,7 @@
                 "enabled": true
             },
             "MessageEventsAPI": {
-                "enabled": false
+                "enabled": true
             },
             "MessagePopoverAPI": {
                 "enabled": false
@@ -427,6 +427,12 @@
             },
             "USRBG": {
                 "enabled": false
+            },
+            "ShowConnections": {
+                "enabled": true
+            },
+            "TextReplace": {
+                "enabled": false
             }
         },
         "notifications": {
@@ -441,7 +447,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1682302941017
+            "settingsSyncVersion": 1682818288159
         }
     },
     "quickCss": ""
