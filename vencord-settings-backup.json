@@ -51,7 +51,7 @@
                 "enabled": false
             },
             "SettingsStoreAPI": {
-                "enabled": false
+                "enabled": true
             },
             "WebRichPresence (arRPC)": {
                 "enabled": false
@@ -145,7 +145,7 @@
                 "enabled": false
             },
             "GameActivityToggle": {
-                "enabled": false
+                "enabled": true
             },
             "GifPaste": {
                 "enabled": false
@@ -299,7 +299,8 @@
             },
             "SilentMessageToggle": {
                 "enabled": true,
-                "persistState": true
+                "persistState": true,
+                "autoDisable": false
             },
             "SilentTyping": {
                 "enabled": true,
@@ -390,13 +391,39 @@
                 "saveZoomValues": true
             },
             "MoreUserTags": {
-                "enabled": true,
-                "visibility_WEBHOOK": "always",
-                "visibility_OWNER": "always",
-                "visibility_ADMINISTRATOR": "always",
-                "visibility_MODERATOR_STAFF": "always",
-                "visibility_MODERATOR": "always",
-                "visibility_VOICE_MODERATOR": "always"
+                "tagSettings": {
+                    "WEBHOOK": {
+                        "text": "Webhook",
+                        "showInChat": true,
+                        "showInNotChat": true
+                    },
+                    "OWNER": {
+                        "text": "Owner",
+                        "showInChat": true,
+                        "showInNotChat": true
+                    },
+                    "ADMINISTRATOR": {
+                        "text": "Admin",
+                        "showInChat": true,
+                        "showInNotChat": true
+                    },
+                    "MODERATOR_STAFF": {
+                        "text": "Staff",
+                        "showInChat": true,
+                        "showInNotChat": true
+                    },
+                    "MODERATOR": {
+                        "text": "Mod",
+                        "showInChat": true,
+                        "showInNotChat": true
+                    },
+                    "VOICE_MODERATOR": {
+                        "text": "VC Mod",
+                        "showInChat": true,
+                        "showInNotChat": true
+                    }
+                },
+                "enabled": true
             },
             "UserVoiceShow": {
                 "enabled": true,
@@ -429,10 +456,24 @@
                 "enabled": false
             },
             "ShowConnections": {
-                "enabled": true
+                "enabled": true,
+                "iconSpacing": 1,
+                "iconSize": 32
             },
             "TextReplace": {
+                "enabled": true
+            },
+            "VencordToolbox": {
+                "enabled": true
+            },
+            "ShowAllMessageButtons": {
+                "enabled": true
+            },
+            "Translate": {
                 "enabled": false
+            },
+            "ValidUser": {
+                "enabled": true
             }
         },
         "notifications": {
@@ -447,7 +488,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1682818288159
+            "settingsSyncVersion": 1684028788921
         }
     },
     "quickCss": ""
