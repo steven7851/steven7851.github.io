@@ -976,24 +976,24 @@
 :root .userPopoutOuter_d67f56 .userPopoutOverlayBackground__3e7e6 .activity__20c1e .platformIcon_a2d873 {
   display: none;
 }
-:root .userPopoutOuter_d67f56 .userPopoutOverlayBackground__3e7e6 .role_d81130 {
+:root .userPopoutOuter_d67f56 .userPopoutOverlayBackground__3e7e6 .role__18ec9 {
   position: relative;
   overflow: hidden;
   border: none;
   z-index: 1;
 }
-:root .userPopoutOuter_d67f56 .userPopoutOverlayBackground__3e7e6 .role_d81130:not(.addButton__6f12b) {
+:root .userPopoutOuter_d67f56 .userPopoutOverlayBackground__3e7e6 .role__18ec9:not(.addButton__6f12b) {
   pointer-events: none;
 }
-:root .userPopoutOuter_d67f56 .userPopoutOverlayBackground__3e7e6 .role_d81130 .roleRemoveButton__20c70 {
+:root .userPopoutOuter_d67f56 .userPopoutOverlayBackground__3e7e6 .role__18ec9 .roleRemoveButton__20c70 {
   position: static;
 }
-:root .userPopoutOuter_d67f56 .userPopoutOverlayBackground__3e7e6 .role_d81130 .roleRemoveButton__20c70 .roleCircle__61ad8 {
+:root .userPopoutOuter_d67f56 .userPopoutOverlayBackground__3e7e6 .role__18ec9 .roleRemoveButton__20c70 .roleCircle__61ad8 {
   width: var(--role-circle) !important;
   height: var(--role-circle) !important;
   pointer-events: auto;
 }
-:root .userPopoutOuter_d67f56 .userPopoutOverlayBackground__3e7e6 .role_d81130 .roleRemoveButton__20c70 .roleCircle__61ad8::before {
+:root .userPopoutOuter_d67f56 .userPopoutOverlayBackground__3e7e6 .role__18ec9 .roleRemoveButton__20c70 .roleCircle__61ad8::before {
   position: absolute;
   content: "";
   top: 0;
@@ -1006,10 +1006,10 @@
   pointer-events: none;
   transition: background 200ms;
 }
-:root .userPopoutOuter_d67f56 .userPopoutOverlayBackground__3e7e6 .role_d81130 .roleRemoveButton__20c70 .roleCircle__61ad8:hover {
+:root .userPopoutOuter_d67f56 .userPopoutOverlayBackground__3e7e6 .role__18ec9 .roleRemoveButton__20c70 .roleCircle__61ad8:hover {
   background: #fd5959 !important;
 }
-:root .userPopoutOuter_d67f56 .userPopoutOverlayBackground__3e7e6 .role_d81130 .roleRemoveButton__20c70 .roleRemoveIcon_c3913a {
+:root .userPopoutOuter_d67f56 .userPopoutOverlayBackground__3e7e6 .role__18ec9 .roleRemoveButton__20c70 .roleRemoveIcon_c3913a {
   display: none;
 }
 :root .container_cff83e {
@@ -1543,16 +1543,16 @@
   z-index: 1;
   border-radius: 0;
 }
-:root .sidebar__37984 .list__41249 .role_d81130 {
+:root .sidebar__37984 .list__41249 .role__18ec9 {
   border-radius: 5px;
   margin-bottom: 6px;
   padding-left: 20px;
 }
-:root .sidebar__37984 .list__41249 .role_d81130 .roleCircle__61ad8 {
+:root .sidebar__37984 .list__41249 .role__18ec9 .roleCircle__61ad8 {
   width: 0;
   margin: 0;
 }
-:root .sidebar__37984 .list__41249 .role_d81130 .roleCircle__61ad8::before {
+:root .sidebar__37984 .list__41249 .role__18ec9 .roleCircle__61ad8::before {
   position: absolute;
   border-radius: 5px;
   content: "";
@@ -1565,7 +1565,7 @@
   z-index: -1;
   transition: opacity 200ms;
 }
-:root .sidebar__37984 .list__41249 .role_d81130 .roleName-3910zV {
+:root .sidebar__37984 .list__41249 .role__18ec9 .roleName-3910zV {
   margin-left: 0;
 }
 :root .sidebar__37984 .item__48dda:hover:not(.disabled__2717e),
