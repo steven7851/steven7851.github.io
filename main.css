@@ -985,15 +985,15 @@
 :root .userPopoutOuter_c69a7b .userPopoutOverlayBackground_c69a7b .role_f9575e:not(.addButton_e4010c) {
   pointer-events: none;
 }
-:root .userPopoutOuter_c69a7b .userPopoutOverlayBackground_c69a7b .role_f9575e .roleRemoveButton_e4010c {
+:root .userPopoutOuter_c69a7b .userPopoutOverlayBackground_c69a7b .role_f9575e .roleRemoveButton_f9575e {
   position: static;
 }
-:root .userPopoutOuter_c69a7b .userPopoutOverlayBackground_c69a7b .role_f9575e .roleRemoveButton_e4010c .roleCircle_a26d7b {
+:root .userPopoutOuter_c69a7b .userPopoutOverlayBackground_c69a7b .role_f9575e .roleRemoveButton_f9575e .roleCircle_a26d7b {
   width: var(--role-circle) !important;
   height: var(--role-circle) !important;
   pointer-events: auto;
 }
-:root .userPopoutOuter_c69a7b .userPopoutOverlayBackground_c69a7b .role_f9575e .roleRemoveButton_e4010c .roleCircle_a26d7b::before {
+:root .userPopoutOuter_c69a7b .userPopoutOverlayBackground_c69a7b .role_f9575e .roleRemoveButton_f9575e .roleCircle_a26d7b::before {
   position: absolute;
   content: "";
   top: 0;
@@ -1006,10 +1006,10 @@
   pointer-events: none;
   transition: background 200ms;
 }
-:root .userPopoutOuter_c69a7b .userPopoutOverlayBackground_c69a7b .role_f9575e .roleRemoveButton_e4010c .roleCircle_a26d7b:hover {
+:root .userPopoutOuter_c69a7b .userPopoutOverlayBackground_c69a7b .role_f9575e .roleRemoveButton_f9575e .roleCircle_a26d7b:hover {
   background: #fd5959 !important;
 }
-:root .userPopoutOuter_c69a7b .userPopoutOverlayBackground_c69a7b .role_f9575e .roleRemoveButton_e4010c .roleRemoveIcon_e4010c {
+:root .userPopoutOuter_c69a7b .userPopoutOverlayBackground_c69a7b .role_f9575e .roleRemoveButton_f9575e .roleRemoveIcon_e4010c {
   display: none;
 }
 :root .container_ac201b {
