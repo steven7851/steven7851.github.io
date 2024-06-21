@@ -769,10 +769,10 @@
 :root .container_eedf95 .option_b0286e.selected-rZcOL- {
   background: linear-gradient(90deg, rgba(54, 57, 63, 0), var(--background-secondary) 80%);
 }
-:root .container_eedf95 .calendarPicker__47c85 .react-datepicker {
+:root .container_eedf95 .calendarPicker_be05cd .react-datepicker {
   background-color: var(--background-secondary-alt);
 }
-:root .container_eedf95 .calendarPicker__47c85 .react-datepicker__day, :root .container_eedf95 .calendarPicker__47c85 .react-datepicker__header {
+:root .container_eedf95 .calendarPicker_be05cd .react-datepicker__day, :root .container_eedf95 .calendarPicker_be05cd .react-datepicker__header {
   background: var(--background-secondary-alt) !important;
   border-color: var(--background-tertiary);
 }
@@ -1444,8 +1444,8 @@
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
-:root .tabBarItemContainer_e7c031 .textBadge_f05120.baseShapeRound_c1de89,
-:root .landingPageTabLink_f7189e .textBadge_f05120.baseShapeRound_c1de89 {
+:root .tabBarItemContainer_e7c031 .textBadge_f05120.baseShapeRound_df8943,
+:root .landingPageTabLink_f7189e .textBadge_f05120.baseShapeRound_df8943 {
   margin-right: 7px;
 }
 :root .connectionIcon_e2a436 {
@@ -1732,7 +1732,7 @@
   background: var(--background-secondary);
   border: none;
 }
-:root .copyInput_f549fd {
+:root .copyInput_d7e343 {
   border: none;
 }
 :root .css-gvi9bl-control,
@@ -1826,7 +1826,7 @@
 :root .quickSelect__540d0 {
   margin-top: 10px;
 }
-:root .quickSelectPopout__56a98.regionSelectPopout_ccb5ca {
+:root .quickSelectPopout_abbf45.regionSelectPopout_ccb5ca {
   background: var(--background-secondary-alt);
   box-shadow: none;
 }
@@ -2524,7 +2524,7 @@
   right: 50px;
 }
 
-.member_aa4760 .username__11d8c::after {
+.member_a31c43 .username_a31c43::after {
   bottom: 2px !important;
   left: 15px !important;
 }
