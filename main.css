@@ -37,7 +37,7 @@
 }
 :root .content_a4d4d9 > :nth-child(2):not(.chat_a7d72e),
 :root .callContainer_ed4410,
-:root .gatedContent_b9693a,
+:root .gatedContent_def860,
 :root .chat_a7d72e > .content_a7d72e > .container_a6d69a > .list_a6d69a[data-list-id^=forum-channel-list],
 :root .chat_a7d72e > .content_a7d72e > .pageContainer_a9a262,
 :root .forumOrHome_ff5f90 + .content_a7d72e > .container__93316,
@@ -140,27 +140,27 @@
   border-radius: 20px;
   padding: 0;
 }
-:root .autocompleteRow_f23da8 {
+:root .autocompleteRow_bcc24e {
   padding: 0;
 }
-:root .autocompleteRow_f23da8 .base_f23da8 {
+:root .autocompleteRow_bcc24e .base_bcc24e {
   border-radius: 0;
 }
-:root .autocompleteRow_f23da8:first-of-type,
-:root .autocompleteRow_f23da8 .option_bea3ee {
+:root .autocompleteRow_bcc24e:first-of-type,
+:root .autocompleteRow_bcc24e .option_bea3ee {
   background-color: var(--background-tertiary);
 }
-:root .autocomplete_f23da8 {
+:root .autocomplete_bcc24e {
   background: var(--background-secondary-alt);
 }
 :root .categoryHeader_fe2299,
-:root .autocomplete_f23da8 {
+:root .autocomplete_bcc24e {
   background: var(--background-secondary);
 }
 :root .selected-3H3-RC {
   background: var(--background-primary);
 }
-:root .sprite_af14ca {
+:root .sprite_d91a75 {
   filter: var(--colored-emoji) !important;
 }
 :root #emoji-picker-tab .contents_dd4f85,
@@ -213,8 +213,8 @@
 :root .attachButton_d0696b:hover .attachButtonPlus_f298d4 {
   fill: var(--chat-buttons);
 }
-:root .buttonWrapper_cecf00,
-:root .icon_cecf00 {
+:root .buttonWrapper_f9af59,
+:root .icon_f9af59 {
   color: var(--chat-buttons);
 }
 :root .contentWarningPopout_fa823b {
@@ -238,10 +238,10 @@
   background-color: var(--background-secondary);
   border-color: transparent;
 }
-:root .attachment_a4623d {
+:root .attachment_b52bef {
   border: none;
 }
-:root .embedSpotify_ad0b71 {
+:root .embedSpotify_b0068a {
   border-radius: 5px;
 }
 :root .tile_ab47a1 {
@@ -663,23 +663,23 @@
 :root .container__13b2a section {
   background-color: var(--background-secondary);
 }
-:root .group_e3c4bb {
+:root .group_d25d19 {
   width: 110px;
   border: none;
   gap: 5px;
 }
-:root .group_e3c4bb .item_e3c4bb {
+:root .group_d25d19 .item_d25d19 {
   border-radius: 8px;
 }
-:root .group_e3c4bb .item_e3c4bb:hover.deny_e3c4bb, :root .group_e3c4bb .item_e3c4bb.selected_e3c4bb.deny_e3c4bb {
+:root .group_d25d19 .item_d25d19:hover.deny_d25d19, :root .group_d25d19 .item_d25d19.selected_d25d19.deny_d25d19 {
   color: #ed4245;
   background-color: rgba(237, 66, 69, 0.1843137255);
 }
-:root .group_e3c4bb .item_e3c4bb:hover.passthrough_e3c4bb, :root .group_e3c4bb .item_e3c4bb.selected_e3c4bb.passthrough_e3c4bb {
+:root .group_d25d19 .item_d25d19:hover.passthrough_d25d19, :root .group_d25d19 .item_d25d19.selected_d25d19.passthrough_d25d19 {
   color: #dcddde;
   background-color: rgba(100, 100, 100, 0.2274509804);
 }
-:root .group_e3c4bb .item_e3c4bb:hover.allow_e3c4bb, :root .group_e3c4bb .item_e3c4bb.selected_e3c4bb.allow_e3c4bb {
+:root .group_d25d19 .item_d25d19:hover.allow_d25d19, :root .group_d25d19 .item_d25d19.selected_d25d19.allow_d25d19 {
   color: #43b581;
   background-color: rgba(67, 181, 130, 0.231372549);
 }
@@ -1472,7 +1472,7 @@
   background-color: var(--background-tertiary);
 }
 :root .paymentRow_f66684,
-:root .pageActions_cb56ee,
+:root .pageActions_d6a4eb,
 :root .codeRedemptionRedirect_cb70f4 {
   background: var(--background-secondary-alt);
 }
@@ -2320,7 +2320,7 @@
 :root .avatar-2EVtgZ,
 :root .avatarContainerMasked_d03bba,
 :root .appAvatar-2_lufo,
-:root .embedAuthorIcon_ad0b71 {
+:root .embedAuthorIcon_b0068a {
   border-radius: var(--avatar-radius);
 }
 :root .wrapper_c5f96a foreignObject {
@@ -2337,7 +2337,7 @@
 :root .flexChild_bba380 .avatarUploaderInner_f0a9ff {
   border-radius: var(--server-radius);
 }
-:root .iconInactive_f11207 {
+:root .iconInactive_a64689 {
   border-radius: calc(var(--server-radius) - 4px);
 }
 :root .wrapper_c5f96a foreignObject {
@@ -2423,7 +2423,7 @@
 :root .lookFilled-yCfaCM.colorBrandNew-2-gGsS:hover {
   background-color: var(--brand-experiment-560);
 }
-:root .gameVerifiedIcon-3t4jtr .flowerStar_ff7d90 > path {
+:root .gameVerifiedIcon-3t4jtr .flowerStar_c91f7d > path {
   fill: var(--brand-experiment);
 }
 :root .wrapper__8436d:hover .childWrapper_a6ce15 {
