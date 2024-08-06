@@ -391,7 +391,7 @@
 :root .panels_a4d4d9 > .container_b2ca13 {
   height: 0;
 }
-:root .panels_a4d4d9 > .container_b2ca13 > .flex_bba380 {
+:root .panels_a4d4d9 > .container_b2ca13 > .flex_dc333f {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -400,16 +400,16 @@
   flex-direction: column;
   background: linear-gradient(transparent, var(--background-tertiary) 15%);
 }
-:root .panels_a4d4d9 > .container_b2ca13 > .flex_bba380 > .button_f67531 {
+:root .panels_a4d4d9 > .container_b2ca13 > .flex_dc333f > .button_adca65 {
   color: var(--user-buttons-color);
   margin: var(--user-buttons-spacing) auto 0 auto;
 }
-:root .inner-1ilYF7 > .modal_ec75c1 > .header_f9a4c9,
-:root .modal_ec75c1,
-:root .inner-1ilYF7 > .modal_ec75c1 > .scrollerBase_eed6a8 {
+:root .inner-1ilYF7 > .modal_c97cbd > .header_f9a4c9,
+:root .modal_c97cbd,
+:root .inner-1ilYF7 > .modal_c97cbd > .scrollerBase_eed6a8 {
   background: var(--background-secondary);
 }
-:root .unreadMentionsBar_fea3ef .text_c10249 {
+:root .unreadMentionsBar_fea3ef .text_edf32f {
   display: none;
 }
 :root .unreadMentionsIndicatorTop_fea3ef {
@@ -580,11 +580,11 @@
   width: 100%;
   padding: 0;
 }
-:root .unreadTop__6e8c4 .unreadBar_c43953.mention_c10249 {
+:root .unreadTop__6e8c4 .unreadBar_c43953.mention_edf32f {
   border-radius: 0;
   background: linear-gradient(var(--mention-color), rgba(0, 0, 0, 0));
 }
-:root .unreadTop__6e8c4 .unreadBar_c43953.unread_c10249 {
+:root .unreadTop__6e8c4 .unreadBar_c43953.unread_edf32f {
   border-radius: 0;
   background: linear-gradient(var(--unread-color), rgba(0, 0, 0, 0));
 }
@@ -593,15 +593,15 @@
   height: 15px;
   padding: 0;
 }
-:root .unreadBottom__6be9f .unreadBar_c43953.mention_c10249 {
+:root .unreadBottom__6be9f .unreadBar_c43953.mention_edf32f {
   border-radius: 0;
   background: linear-gradient(rgba(0, 0, 0, 0), var(--mention-color));
 }
-:root .unreadBottom__6be9f .unreadBar_c43953.unread_c10249 {
+:root .unreadBottom__6be9f .unreadBar_c43953.unread_edf32f {
   border-radius: 0;
   background: linear-gradient(rgba(0, 0, 0, 0), var(--unread-color));
 }
-:root .unreadBar_c43953 > .text_c10249 {
+:root .unreadBar_c43953 > .text_edf32f {
   display: none;
 }
 :root .mentionsBadge_e2a798 .numberBadge__40d6f {
@@ -1296,7 +1296,7 @@
 }
 :root .contentColumn_c25c6d,
 :root .customColumn_c25c6d,
-:root .sidebarScrollable_e9196a + .content_e9196a,
+:root .sidebarScrollable_ff90b2 + .content_ff90b2,
 :root .customScroller_c25c6d > div {
   max-width: 95%;
 }
@@ -1518,7 +1518,7 @@
 :root .bannerUpsellContainer-31E9J5 {
   background-color: var(--background-secondary);
 }
-:root .flexChild_bba380[style="flex: 1 1 50%;"] {
+:root .flexChild_dc333f[style="flex: 1 1 50%;"] {
   flex: 1 !important;
 }
 :root .noticeRegion_c25c6d {
@@ -1768,10 +1768,10 @@
   background: var(--background-secondary);
 }
 :root .tierHeaderContent_da77bd,
-:root .tierInProgress_a4fd01 {
+:root .tierInProgress_bfac79 {
   background: var(--background-secondary-alt);
 }
-:root .background_a4fd01 {
+:root .background_bfac79 {
   color: var(--background-secondary-alt);
 }
 :root .subscribers_da77bd .subscriberMask_da77bd {
@@ -1796,13 +1796,13 @@
 :root .nowPlayingColumn_c2739c .itemCard_f02fcf {
   border: none;
 }
-:root .nowPlayingColumn_c2739c .itemCard_f02fcf.active_c0f6a6, :root .nowPlayingColumn_c2739c .itemCard_f02fcf.interactive_c0f6a6:hover {
+:root .nowPlayingColumn_c2739c .itemCard_f02fcf.active_ac5d22, :root .nowPlayingColumn_c2739c .itemCard_f02fcf.interactive_ac5d22:hover {
   background: var(--background-secondary);
 }
 :root .nowPlayingColumn_c2739c .itemCard_f02fcf .section_cd82a7:last-child {
   margin-top: 10px;
 }
-:root .nowPlayingColumn_c2739c .itemCard_f02fcf .inset_c0f6a6 {
+:root .nowPlayingColumn_c2739c .itemCard_f02fcf .inset_ac5d22 {
   background: transparent;
 }
 :root .nowPlayingColumn_c2739c .itemCard_f02fcf .applicationStreamingPreviewWrapper_cd82a7 {
@@ -2174,7 +2174,7 @@
 }
 :root .root_f9a4c9,
 :root .footer_f9a4c9,
-:root .modal_ec75c1 {
+:root .modal_c97cbd {
   box-shadow: none;
 }
 :root .default_a467ac,
@@ -2309,7 +2309,7 @@
 :root .voiceAvatar_db83a2,
 :root .avatar_f9f2ca,
 :root .border_db83a2,
-:root .avatar_cdc675,
+:root .avatar_d80634,
 :root .clickableAvatar_d03bba,
 :root .emptyUser_d03bba,
 :root .avatar_d03bba,
@@ -2334,7 +2334,7 @@
 :root .wrapper_c5f96a foreignObject,
 :root .folderIconWrapper_bc7085,
 :root .expandedFolderBackground_bc7085,
-:root .flexChild_bba380 .avatarUploaderInner_f0a9ff {
+:root .flexChild_dc333f .avatarUploaderInner_f0a9ff {
   border-radius: var(--server-radius);
 }
 :root .iconInactive_a64689 {
