@@ -491,7 +491,7 @@
   --button-count: 3;
   --buttons-height: calc((34.5px * var(--button-count)) + 10px);
 }
-:root:has(.container__37e49 > .flex__7c0ba > button:nth-child(4)) {
+:root:has(.container__37e49 .flex__7c0ba > button:nth-child(4)) {
   --button-count: 4;
 }
 :root .guilds_c48ade .scroller_ef3116 {
@@ -2508,13 +2508,13 @@
 :root #MemberCount {
   background-color: var(--background-secondary) !important;
 }
-:root .guilds_c48ade.content-Pph8t6 + .base_c48ade .panels_c48ade > .container__37e49 > .avatarWrapper__37e49 {
+:root .guilds_c48ade.content-Pph8t6 + .base_c48ade .panels_c48ade > .container__37e49 .avatarWrapper__37e49 {
   transition: margin-left 300ms linear;
 }
-:root .guilds_c48ade.content-Pph8t6:not(.closed-j55_T-) + .base_c48ade .panels_c48ade > .container__37e49 > .avatarWrapper__37e49 {
+:root .guilds_c48ade.content-Pph8t6:not(.closed-j55_T-) + .base_c48ade .panels_c48ade > .container__37e49 .avatarWrapper__37e49 {
   margin-left: 72px;
 }
-:root .vc-bf-folder-sidebar + .base_c48ade .panels_c48ade > .container__37e49 > .avatarWrapper__37e49 {
+:root .vc-bf-folder-sidebar + .base_c48ade .panels_c48ade > .container__37e49 .avatarWrapper__37e49 {
   transition: margin-left 300ms linear;
   margin-left: 72px;
 }
