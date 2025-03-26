@@ -1,3 +1,4 @@
+@import "https://metro420yt.github.io/misc/discordRefreshWarning.css";
 :root .buttons__5126c {
   transition: opacity 150ms;
 }
@@ -605,6 +606,9 @@
   padding: 20px 0 10px 0;
   flex-direction: column;
   background: linear-gradient(transparent, var(--background-tertiary) 15%);
+}
+:root .panels_c48ade > .container__37e49 .buttons__37e49 > .micButtonParent__37e49 {
+  margin: 0;
 }
 :root .panels_c48ade > .container__37e49 .buttons__37e49 .button__67645 {
   color: var(--user-buttons-color);
@@ -2530,4 +2534,8 @@
 :root .root-8LYsGj .UserBackgrounds-banner-container .UserBackgrounds-banner-badge {
   top: 13px;
   right: 50px;
+}
+
+:root {
+  --visRefresh-text: "[Comfy] New UI Unsupported";
 }
